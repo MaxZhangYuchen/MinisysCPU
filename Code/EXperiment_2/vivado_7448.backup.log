@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jul  5 21:43:47 2020
+# Process ID: 7448
+# Current directory: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5320 C:\Users\Pikachu\Desktop\Hardware course design\EXperiment_2\EXperiment_2.xpr
+# Log file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/vivado.log
+# Journal file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado18.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 783.957 ; gain = 181.855
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Jul  5 22:18:45 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+[Sun Jul  5 22:18:45 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 830.078 ; gain = 4.074
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Jul  5 22:24:54 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+[Sun Jul  5 22:24:54 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  5 22:29:35 2020...

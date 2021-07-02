@@ -1,0 +1,194 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x822B4051F64CA83",
+      "device": "xc7a35tftg256-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ALU_control_0": "",
+      "control_0": "",
+      "ALU_0": "",
+      "Registers_0": "",
+      "instruction_memory_0": "",
+      "PC_0": ""
+    },
+    "ports": {
+      "pc_load_0": {
+        "direction": "I"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "ALU_control_0": {
+        "vlnv": "xilinx.com:user:ALU_control:1.0",
+        "xci_name": "design_1_ALU_control_0_0"
+      },
+      "control_0": {
+        "vlnv": "xilinx.com:user:control:1.0",
+        "xci_name": "design_1_control_0_0"
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:user:ALU:1.0",
+        "xci_name": "design_1_ALU_0_0"
+      },
+      "Registers_0": {
+        "vlnv": "xilinx.com:user:Registers:1.0",
+        "xci_name": "design_1_Registers_0_0"
+      },
+      "instruction_memory_0": {
+        "vlnv": "xilinx.com:user:instruction_memory:1.0",
+        "xci_name": "design_1_instruction_memory_0_0"
+      },
+      "PC_0": {
+        "vlnv": "xilinx.com:user:PC:1.0",
+        "xci_name": "design_1_PC_0_0"
+      }
+    },
+    "nets": {
+      "instruction_memory_0_op": {
+        "ports": [
+          "instruction_memory_0/op",
+          "control_0/op",
+          "ALU_control_0/op"
+        ]
+      },
+      "instruction_memory_0_rs": {
+        "ports": [
+          "instruction_memory_0/rs",
+          "Registers_0/ReadRegister1"
+        ]
+      },
+      "instruction_memory_0_rt": {
+        "ports": [
+          "instruction_memory_0/rt",
+          "Registers_0/ReadRegister2"
+        ]
+      },
+      "instruction_memory_0_rd": {
+        "ports": [
+          "instruction_memory_0/rd",
+          "Registers_0/WriteRegister"
+        ]
+      },
+      "ALU_control_0_ALU_func": {
+        "ports": [
+          "ALU_control_0/ALU_func",
+          "ALU_0/func"
+        ]
+      },
+      "control_0_ALUSrc": {
+        "ports": [
+          "control_0/ALUSrc",
+          "ALU_0/ALUSrc"
+        ]
+      },
+      "control_0_RegDst": {
+        "ports": [
+          "control_0/RegDst",
+          "Registers_0/RegDst"
+        ]
+      },
+      "ALU_0_alu_out": {
+        "ports": [
+          "ALU_0/alu_out",
+          "Registers_0/WriteData"
+        ]
+      },
+      "Registers_0_ReadData1": {
+        "ports": [
+          "Registers_0/ReadData1",
+          "ALU_0/data1"
+        ]
+      },
+      "Registers_0_ReadData2": {
+        "ports": [
+          "Registers_0/ReadData2",
+          "ALU_0/data2"
+        ]
+      },
+      "PC_0_pc_addr": {
+        "ports": [
+          "PC_0/pc_addr",
+          "instruction_memory_0/pc_addr"
+        ]
+      },
+      "pc_load_0_1": {
+        "ports": [
+          "pc_load_0",
+          "PC_0/pc_load"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "PC_0/clk",
+          "instruction_memory_0/clk",
+          "Registers_0/clk",
+          "control_0/clk"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "PC_0/rst",
+          "Registers_0/rst"
+        ]
+      },
+      "instruction_memory_0_sign_extend": {
+        "ports": [
+          "instruction_memory_0/sign_extend",
+          "ALU_0/sign_extend_data"
+        ]
+      },
+      "instruction_memory_0_func": {
+        "ports": [
+          "instruction_memory_0/func",
+          "ALU_control_0/func"
+        ]
+      }
+    }
+  }
+}

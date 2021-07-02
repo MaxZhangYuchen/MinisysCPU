@@ -1,0 +1,277 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xEDAC9A23FDF7D136",
+      "device": "xc7a35tftg256-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ALU_control_0": "",
+      "ALU_0": "",
+      "IM_0": "",
+      "PC_0": "",
+      "sign_extend_0": "",
+      "MUX_addr_0": "",
+      "MUX_sign_extend_data_0": "",
+      "MUX_data_choice_0": "",
+      "control_0": "",
+      "add_0": "",
+      "shifter2_0": "",
+      "Registers_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "ALU_control_0": {
+        "vlnv": "xilinx.com:user:ALU_control:1.0",
+        "xci_name": "design_1_ALU_control_0_0"
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:user:ALU:1.0",
+        "xci_name": "design_1_ALU_0_0"
+      },
+      "IM_0": {
+        "vlnv": "xilinx.com:user:IM:1.0",
+        "xci_name": "design_1_IM_0_0"
+      },
+      "PC_0": {
+        "vlnv": "xilinx.com:user:PC:1.0",
+        "xci_name": "design_1_PC_0_0"
+      },
+      "sign_extend_0": {
+        "vlnv": "xilinx.com:user:sign_extend:1.0",
+        "xci_name": "design_1_sign_extend_0_0"
+      },
+      "MUX_addr_0": {
+        "vlnv": "xilinx.com:user:MUX_addr:1.0",
+        "xci_name": "design_1_MUX_addr_0_0"
+      },
+      "MUX_sign_extend_data_0": {
+        "vlnv": "xilinx.com:user:MUX_sign_extend_data:1.0",
+        "xci_name": "design_1_MUX_sign_extend_data_0_0"
+      },
+      "MUX_data_choice_0": {
+        "vlnv": "xilinx.com:user:MUX_data_choice:1.0",
+        "xci_name": "design_1_MUX_data_choice_0_1"
+      },
+      "control_0": {
+        "vlnv": "xilinx.com:user:control:1.0",
+        "xci_name": "design_1_control_0_1"
+      },
+      "add_0": {
+        "vlnv": "xilinx.com:user:add:1.0",
+        "xci_name": "design_1_add_0_0"
+      },
+      "shifter2_0": {
+        "vlnv": "xilinx.com:user:shifter2:1.0",
+        "xci_name": "design_1_shifter2_0_0"
+      },
+      "Registers_0": {
+        "vlnv": "xilinx.com:user:Registers:1.0",
+        "xci_name": "design_1_Registers_0_0"
+      }
+    },
+    "nets": {
+      "IM_0_sign_extend": {
+        "ports": [
+          "IM_0/sign_extend",
+          "sign_extend_0/sign_extend"
+        ]
+      },
+      "ALU_control_0_ALU_func": {
+        "ports": [
+          "ALU_control_0/ALU_func",
+          "ALU_0/func"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "IM_0/op",
+          "ALU_control_0/op",
+          "control_0/op"
+        ]
+      },
+      "PC_0_Addr": {
+        "ports": [
+          "PC_0/Addr",
+          "IM_0/Addr",
+          "add_0/Addr"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "PC_0/clk",
+          "ALU_control_0/clk",
+          "control_0/clk",
+          "Registers_0/clk"
+        ]
+      },
+      "IM_0_func": {
+        "ports": [
+          "IM_0/func",
+          "ALU_control_0/func"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "PC_0/rst",
+          "Registers_0/rst"
+        ]
+      },
+      "MUX_addr_0_pc_addr_final": {
+        "ports": [
+          "MUX_addr_0/pc_addr_final",
+          "PC_0/pc_addr"
+        ]
+      },
+      "sign_extend_0_sign_extend_zero": {
+        "ports": [
+          "sign_extend_0/sign_extend_zero",
+          "MUX_sign_extend_data_0/sign_extend_zero"
+        ]
+      },
+      "sign_extend_0_sign_extend_one": {
+        "ports": [
+          "sign_extend_0/sign_extend_one",
+          "MUX_sign_extend_data_0/sign_extend_one"
+        ]
+      },
+      "MUX_data_choice_0_data_final": {
+        "ports": [
+          "MUX_data_choice_0/data_final",
+          "ALU_0/data2"
+        ]
+      },
+      "MUX_sign_extend_data_0_data": {
+        "ports": [
+          "MUX_sign_extend_data_0/data",
+          "MUX_data_choice_0/data_sign_extend"
+        ]
+      },
+      "control_0_Branch": {
+        "ports": [
+          "control_0/Branch",
+          "MUX_addr_0/Branch"
+        ]
+      },
+      "control_0_ALUSrc": {
+        "ports": [
+          "control_0/ALUSrc",
+          "MUX_data_choice_0/ALUSrc"
+        ]
+      },
+      "control_0_Se": {
+        "ports": [
+          "control_0/Se",
+          "MUX_sign_extend_data_0/Se"
+        ]
+      },
+      "IM_0_J_addr": {
+        "ports": [
+          "IM_0/J_addr",
+          "shifter2_0/J_addr"
+        ]
+      },
+      "add_0_PC_Addr": {
+        "ports": [
+          "add_0/PC_Addr",
+          "shifter2_0/pc_addr",
+          "MUX_addr_0/pc_addr"
+        ]
+      },
+      "shifter2_0_pc_addr_J": {
+        "ports": [
+          "shifter2_0/pc_addr_J",
+          "MUX_addr_0/pc_addr_J"
+        ]
+      },
+      "IM_0_rs": {
+        "ports": [
+          "IM_0/rs",
+          "Registers_0/ReadRegister1"
+        ]
+      },
+      "IM_0_rt": {
+        "ports": [
+          "IM_0/rt",
+          "Registers_0/ReadRegister2"
+        ]
+      },
+      "IM_0_rd": {
+        "ports": [
+          "IM_0/rd",
+          "Registers_0/WriteRegister"
+        ]
+      },
+      "Registers_0_ReadData1": {
+        "ports": [
+          "Registers_0/ReadData1",
+          "ALU_0/data1"
+        ]
+      },
+      "Registers_0_ReadData2": {
+        "ports": [
+          "Registers_0/ReadData2",
+          "MUX_data_choice_0/data2"
+        ]
+      },
+      "ALU_0_alu_out": {
+        "ports": [
+          "ALU_0/alu_out",
+          "Registers_0/WriteData"
+        ]
+      },
+      "control_0_RegDst": {
+        "ports": [
+          "control_0/RegDst",
+          "Registers_0/RegDst"
+        ]
+      }
+    }
+  }
+}

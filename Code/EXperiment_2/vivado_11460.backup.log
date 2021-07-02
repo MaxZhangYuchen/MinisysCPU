@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  3 20:00:29 2020
+# Process ID: 11460
+# Current directory: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11792 C:\Users\Pikachu\Desktop\Hardware course design\EXperiment_2\EXperiment_2.xpr
+# Log file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/vivado.log
+# Journal file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado18.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 788.316 ; gain = 155.309
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jul  3 20:29:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1100.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.801 ; gain = 369.793
+place_ports {Column[0]} L14
+place_ports {Column[1]} M14
+place_ports {Column[2]} L15
+place_ports {Column[3]} M15
+place_ports {Column[4]} K13
+place_ports {Column[5]} L13
+place_ports {Column[6]} L12
+place_ports {Column[7]} T9
+place_ports {Column[8]} C6
+place_ports {Column[9]} D6
+place_ports {Column[10]} D5
+place_ports {Column[11]} A2
+place_ports {Column[12]} D3
+place_ports {Column[13]} C4
+place_ports {Column[14]} D16
+place_ports {Column[15]} C7
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Row[15]} {Row[14]} {Row[13]} {Row[12]} {Row[11]} {Row[10]} {Row[9]} {Row[8]} {Row[7]} {Row[6]} {Row[5]} {Row[4]} {Row[3]} {Row[2]} {Row[1]} {Row[0]}]]
+place_ports {Row[0]} D8
+place_ports {Row[1]} A12
+place_ports {Row[2]} D9
+place_ports {Row[3]} E12
+place_ports {Row[4]} E13
+place_ports {Row[5]} E11
+place_ports {Row[6]} T10
+place_ports {Row[7]} R5
+place_ports {Row[8]} T5
+place_ports {Row[9]} R6
+startgroup
+set_property package_pin "" [get_ports [list  {Row[8]}]]
+place_ports {Row[10]} T5
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {Row[10]}]]
+place_ports {Row[8]} T5
+endgroup
+place_ports {Row[10]} R7
+place_ports {Row[11]} D14
+place_ports {Row[12]} D15
+place_ports {Row[13]} F12
+place_ports {Row[14]} F13
+set_property package_pin "" [get_ports [list  {Row[15]}]]
+undo
+INFO: [Common 17-17] undo 'set_property package_pin "" [get_ports [list  {Row[15]}]]'
+undo
+INFO: [Common 17-17] undo 'place_ports {Row[14]} F13'
+set_property package_pin "" [get_ports [list  {Row[15]}]]
+set_property package_pin "" [get_ports [list  {Row[14]}]]
+set_property is_loc_fixed false [get_ports [list  {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+set_property is_loc_fixed true [get_ports [list  {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+place_ports {Row[14]} E16
+place_ports {Row[15]} F13
+file mkdir {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new}
+close [ open {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}}
+set_property target_constrs_file {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc} [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1723.367 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jul  3 20:36:56 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc]
+Finished Parsing XDC File [C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1724.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1806.848 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1806.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1811.023 ; gain = 0.000
+[Fri Jul  3 20:37:50 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1811.023 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1812.301 ; gain = 1.277
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1815.297 ; gain = 0.000
+[Fri Jul  3 20:39:59 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul  3 20:41:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+[Fri Jul  3 20:41:24 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul  3 21:06:58 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+[Fri Jul  3 21:06:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}}
+file delete -force {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}
+close [ open {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jul  3 21:08:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc]
+Finished Parsing XDC File [C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1820.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property package_pin "" [get_ports [list  {Column[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+place_ports {Column[0]} L14
+place_ports {Column[1]} M14
+place_ports {Column[2]} L15
+place_ports {Column[3]} K13
+place_ports {Column[4]} L13
+place_ports {Column[5]} L12
+place_ports {Column[3]} M15
+place_ports {Column[4]} K13
+place_ports {Column[4]} L13
+place_ports {Column[4]} K13
+place_ports {Column[5]} L13
+place_ports {Column[6]} L12
+place_ports {Column[7]} T9
+place_ports {Column[8]} C6
+place_ports {Column[9]} D6
+place_ports {Column[10]} D5
+place_ports {Column[11]} A2
+place_ports {Column[12]} D3
+place_ports {Column[13]} C4
+place_ports {Column[14]} D16
+place_ports {Column[15]} C7
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Row[15]} {Row[14]} {Row[13]} {Row[12]} {Row[11]} {Row[10]} {Row[9]} {Row[8]} {Row[7]} {Row[6]} {Row[5]} {Row[4]} {Row[3]} {Row[2]} {Row[1]} {Row[0]}]]
+place_ports {Row[0]} D8
+place_ports {Row[1]} A12
+place_ports {Row[2]} D9
+place_ports {Row[3]} E12
+place_ports {Row[4]} E13
+place_ports {Row[5]} E11
+place_ports {Row[6]} T10
+place_ports {Row[7]} R5
+place_ports {Row[8]} T5
+place_ports {Row[9]} R6
+place_ports {Row[10]} R7
+place_ports {Row[11]} D14
+place_ports {Row[12]} D15
+place_ports {Row[13]} F12
+place_ports {Row[14]} F13
+place_ports {Row[15]} E16
+set_property target_constrs_file {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc} [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1880.043 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul  3 21:14:26 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+[Fri Jul  3 21:14:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+place_ports clk E3
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1890.949 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul  3 21:17:59 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1893.293 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul  3 21:18:59 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul  3 21:26:01 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+[Fri Jul  3 21:26:01 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul  3 22:05:47 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/synth_1/runme.log
+[Fri Jul  3 22:05:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  3 22:14:46 2020...

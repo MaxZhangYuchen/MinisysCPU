@@ -1,0 +1,161 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  3 20:00:29 2020
+# Process ID: 11460
+# Current directory: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11792 C:\Users\Pikachu\Desktop\Hardware course design\EXperiment_2\EXperiment_2.xpr
+# Log file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/vivado.log
+# Journal file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports {Column[0]} L14
+place_ports {Column[1]} M14
+place_ports {Column[2]} L15
+place_ports {Column[3]} M15
+place_ports {Column[4]} K13
+place_ports {Column[5]} L13
+place_ports {Column[6]} L12
+place_ports {Column[7]} T9
+place_ports {Column[8]} C6
+place_ports {Column[9]} D6
+place_ports {Column[10]} D5
+place_ports {Column[11]} A2
+place_ports {Column[12]} D3
+place_ports {Column[13]} C4
+place_ports {Column[14]} D16
+place_ports {Column[15]} C7
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Row[15]} {Row[14]} {Row[13]} {Row[12]} {Row[11]} {Row[10]} {Row[9]} {Row[8]} {Row[7]} {Row[6]} {Row[5]} {Row[4]} {Row[3]} {Row[2]} {Row[1]} {Row[0]}]]
+place_ports {Row[0]} D8
+place_ports {Row[1]} A12
+place_ports {Row[2]} D9
+place_ports {Row[3]} E12
+place_ports {Row[4]} E13
+place_ports {Row[5]} E11
+place_ports {Row[6]} T10
+place_ports {Row[7]} R5
+place_ports {Row[8]} T5
+place_ports {Row[9]} R6
+startgroup
+set_property package_pin "" [get_ports [list  {Row[8]}]]
+place_ports {Row[10]} T5
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {Row[10]}]]
+place_ports {Row[8]} T5
+endgroup
+place_ports {Row[10]} R7
+place_ports {Row[11]} D14
+place_ports {Row[12]} D15
+place_ports {Row[13]} F12
+place_ports {Row[14]} F13
+set_property package_pin "" [get_ports [list  {Row[15]}]]
+undo
+undo
+set_property package_pin "" [get_ports [list  {Row[15]}]]
+set_property package_pin "" [get_ports [list  {Row[14]}]]
+set_property is_loc_fixed false [get_ports [list  {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+set_property is_loc_fixed true [get_ports [list  {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+place_ports {Row[14]} E16
+place_ports {Row[15]} F13
+file mkdir {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new}
+close [ open {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}}
+set_property target_constrs_file {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}}
+file delete -force {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/display_decode_xdc.xdc}
+close [ open {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+set_property package_pin "" [get_ports [list  {Column[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Column[15]} {Column[14]} {Column[13]} {Column[12]} {Column[11]} {Column[10]} {Column[9]} {Column[8]} {Column[7]} {Column[6]} {Column[5]} {Column[4]} {Column[3]} {Column[2]} {Column[1]} {Column[0]}]]
+place_ports {Column[0]} L14
+place_ports {Column[1]} M14
+place_ports {Column[2]} L15
+place_ports {Column[3]} K13
+place_ports {Column[4]} L13
+place_ports {Column[5]} L12
+place_ports {Column[3]} M15
+place_ports {Column[4]} K13
+place_ports {Column[4]} L13
+place_ports {Column[4]} K13
+place_ports {Column[5]} L13
+place_ports {Column[6]} L12
+place_ports {Column[7]} T9
+place_ports {Column[8]} C6
+place_ports {Column[9]} D6
+place_ports {Column[10]} D5
+place_ports {Column[11]} A2
+place_ports {Column[12]} D3
+place_ports {Column[13]} C4
+place_ports {Column[14]} D16
+place_ports {Column[15]} C7
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Row[15]} {Row[14]} {Row[13]} {Row[12]} {Row[11]} {Row[10]} {Row[9]} {Row[8]} {Row[7]} {Row[6]} {Row[5]} {Row[4]} {Row[3]} {Row[2]} {Row[1]} {Row[0]}]]
+place_ports {Row[0]} D8
+place_ports {Row[1]} A12
+place_ports {Row[2]} D9
+place_ports {Row[3]} E12
+place_ports {Row[4]} E13
+place_ports {Row[5]} E11
+place_ports {Row[6]} T10
+place_ports {Row[7]} R5
+place_ports {Row[8]} T5
+place_ports {Row[9]} R6
+place_ports {Row[10]} R7
+place_ports {Row[11]} D14
+place_ports {Row[12]} D15
+place_ports {Row[13]} F12
+place_ports {Row[14]} F13
+place_ports {Row[15]} E16
+set_property target_constrs_file {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.srcs/constrs_1/new/dispaly_xdc.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+place_ports clk E3
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/IM/IM.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'op' is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:33]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'func' is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:34]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'rs' is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:35]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'rt' is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:36]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'rd' is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:37]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'sign_extend' is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/IM/IM.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb

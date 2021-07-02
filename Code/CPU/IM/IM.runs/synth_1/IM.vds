@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep  1 07:58:30 2020
+# Process ID: 14576
+# Current directory: D:/CPU/IM/IM.runs/synth_1
+# Command line: vivado.exe -log IM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IM.tcl
+# Log file: D:/CPU/IM/IM.runs/synth_1/IM.vds
+# Journal file: D:/CPU/IM/IM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IM.tcl -notrace
+Command: synth_design -top IM -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17412 
+WARNING: [Synth 8-2611] redeclaration of ansi port op is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:33]
+WARNING: [Synth 8-2611] redeclaration of ansi port func is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port rs is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:35]
+WARNING: [Synth 8-2611] redeclaration of ansi port rt is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port rd is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:37]
+WARNING: [Synth 8-2611] redeclaration of ansi port sign_extend is not allowed [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:38]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 442.406 ; gain = 111.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'IM' [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:22]
+WARNING: [Synth 8-3848] Net Rom[31] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[30] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[29] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[28] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[27] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[26] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[25] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[24] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[23] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[22] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[21] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[20] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[19] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[18] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[17] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[16] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[15] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[14] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[13] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[12] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[11] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[10] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[9] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[8] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[7] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[6] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+WARNING: [Synth 8-3848] Net Rom[5] in module/entity IM does not have driver. [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'IM' (1#1) [D:/CPU/IM/IM.srcs/sources_1/new/IM.v:22]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[31]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[30]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[29]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[28]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[27]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[26]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[25]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[24]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[23]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[22]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[21]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[20]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[19]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[18]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[17]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[16]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[15]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[14]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[13]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[12]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[11]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[10]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[9]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[8]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[7]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[1]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 475.422 ; gain = 144.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 475.422 ; gain = 144.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 475.422 ; gain = 144.633
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 475.422 ; gain = 144.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[31]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[30]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[29]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[28]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[27]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[26]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[25]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[24]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[23]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[22]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[21]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[20]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[19]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[18]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[17]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[16]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[15]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[14]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[13]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[12]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[11]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[10]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[9]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[8]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[7]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[1]
+WARNING: [Synth 8-3331] design IM has unconnected port Addr[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 611.969 ; gain = 281.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 611.969 ; gain = 281.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     1|
+|2     |LUT4 |     4|
+|3     |LUT5 |     8|
+|4     |IBUF |     5|
+|5     |OBUF |    43|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    61|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 87 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.996 ; gain = 281.207
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 721.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 721.949 ; gain = 404.230
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 721.949 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/CPU/IM/IM.runs/synth_1/IM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file IM_utilization_synth.rpt -pb IM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  1 07:58:43 2020...

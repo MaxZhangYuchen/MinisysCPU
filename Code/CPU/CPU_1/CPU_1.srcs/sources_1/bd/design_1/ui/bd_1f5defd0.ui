@@ -1,0 +1,47 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port rst_0 -pg 1 -y 270 -defaultsOSRD
+preplace port clk_0 -pg 1 -y 110 -defaultsOSRD
+preplace inst PC_0 -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst Registers_0 -pg 1 -lvl 7 -y 490 -defaultsOSRD
+preplace inst add_0 -pg 1 -lvl 1 -y 360 -defaultsOSRD
+preplace inst MUX_sign_extend_data_0 -pg 1 -lvl 7 -y 220 -defaultsOSRD
+preplace inst MUX_addr_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst ALU_0 -pg 1 -lvl 9 -y 340 -defaultsOSRD
+preplace inst sign_extend_0 -pg 1 -lvl 6 -y 230 -defaultsOSRD
+preplace inst MUX_data_choice_0 -pg 1 -lvl 8 -y 220 -defaultsOSRD
+preplace inst IM_0 -pg 1 -lvl 5 -y 410 -defaultsOSRD
+preplace inst ALU_control_0 -pg 1 -lvl 8 -y 360 -defaultsOSRD
+preplace inst shifter2_0 -pg 1 -lvl 2 -y 610 -defaultsOSRD
+preplace inst control_0 -pg 1 -lvl 2 -y 100 -defaultsOSRD
+preplace netloc ALU_0_alu_out 1 6 4 1740 610 NJ 610 NJ 610 2610
+preplace netloc add_0_PC_Addr 1 1 2 260 310 530
+preplace netloc control_0_Se 1 2 5 NJ 110 NJ 110 NJ 110 NJ 110 1730
+preplace netloc MUX_addr_0_pc_addr_final 1 3 1 N
+preplace netloc IM_0_func 1 5 3 1360 360 NJ 360 NJ
+preplace netloc clk_0_1 1 0 8 NJ 110 260 280 NJ 280 860 290 NJ 290 1370J 370 1730 370 2040
+preplace netloc control_0_RegDst 1 2 5 NJ 90 NJ 90 NJ 90 NJ 90 1720
+preplace netloc shifter2_0_pc_addr_J 1 2 1 550
+preplace netloc control_0_ALUSrc 1 2 6 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 2060
+preplace netloc sign_extend_0_sign_extend_zero 1 6 1 N
+preplace netloc MUX_sign_extend_data_0_data 1 7 1 N
+preplace netloc IM_0_sign_extend 1 5 1 1380
+preplace netloc rst_0_1 1 0 7 NJ 270 NJ 270 NJ 270 850 530 NJ 530 NJ 530 NJ
+preplace netloc Registers_0_ReadData1 1 7 2 NJ 480 2370
+preplace netloc IM_0_rd 1 5 2 NJ 430 1700
+preplace netloc Registers_0_ReadData2 1 7 1 2050
+preplace netloc MUX_data_choice_0_data_final 1 8 1 2360
+preplace netloc PC_0_Addr 1 0 5 20 300 NJ 300 NJ 300 NJ 300 1100
+preplace netloc IM_0_rs 1 5 2 NJ 390 1740
+preplace netloc control_0_Branch 1 2 1 540
+preplace netloc ALU_control_0_ALU_func 1 8 1 N
+preplace netloc IM_0_rt 1 5 2 NJ 410 1710
+preplace netloc IM_0_J_addr 1 1 5 270 540 NJ 540 NJ 540 NJ 540 1370
+preplace netloc Net 1 1 7 260 10 NJ 10 NJ 10 NJ 10 1360 340 NJ 340 NJ
+preplace netloc sign_extend_0_sign_extend_one 1 6 1 N
+levelinfo -pg 1 0 140 400 700 980 1230 1540 1890 2210 2490 2630 -top 0 -bot 680
+"
+}
+0

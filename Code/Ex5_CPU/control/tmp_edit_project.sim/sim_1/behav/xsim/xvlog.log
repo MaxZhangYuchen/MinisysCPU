@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Ex5_CPU/control/CPU_1/CPU_1.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUSrc' is not allowed [D:/Ex5_CPU/control/CPU_1/CPU_1.srcs/sources_1/new/control.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'RegDst' is not allowed [D:/Ex5_CPU/control/CPU_1/CPU_1.srcs/sources_1/new/control.v:32]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'Se' is not allowed [D:/Ex5_CPU/control/CPU_1/CPU_1.srcs/sources_1/new/control.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Ex5_CPU/control/CPU_1/CPU_1.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb

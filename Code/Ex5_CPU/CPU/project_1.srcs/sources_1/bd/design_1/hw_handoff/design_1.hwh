@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep  3 08:46:27 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="design_1" PACKAGE="ftg256" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="pc_load_0" SIGIS="undef" SIGNAME="External_Ports_pc_load_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PC_0" PORT="pc_load"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PC_0" PORT="clk"/>
+        <CONNECTION INSTANCE="instruction_memory_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Registers_0" PORT="clk"/>
+        <CONNECTION INSTANCE="control_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst_0" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PC_0" PORT="rst"/>
+        <CONNECTION INSTANCE="Registers_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/ALU_0" HWVERSION="1.0" INSTANCE="ALU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU" VLNV="xilinx.com:user:ALU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ADD" VALUE="&quot;000010&quot;"/>
+        <PARAMETER NAME="SUB" VALUE="&quot;000110&quot;"/>
+        <PARAMETER NAME="AND" VALUE="&quot;000000&quot;"/>
+        <PARAMETER NAME="OR" VALUE="&quot;000001&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ALU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="7" NAME="alu_out" RIGHT="0" SIGIS="undef" SIGNAME="ALU_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registers_0" PORT="WriteData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data1" RIGHT="0" SIGIS="undef" SIGNAME="Registers_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registers_0" PORT="ReadData1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data2" RIGHT="0" SIGIS="undef" SIGNAME="Registers_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registers_0" PORT="ReadData2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="sign_extend_data" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_sign_extend">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="sign_extend"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="func" RIGHT="0" SIGIS="undef" SIGNAME="ALU_control_0_ALU_func">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_control_0" PORT="ALU_func"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ALUSrc" SIGIS="undef" SIGNAME="control_0_ALUSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="control_0" PORT="ALUSrc"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/ALU_control_0" HWVERSION="1.0" INSTANCE="ALU_control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU_control" VLNV="xilinx.com:user:ALU_control:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ADD" VALUE="&quot;000010&quot;"/>
+        <PARAMETER NAME="SUB" VALUE="&quot;000110&quot;"/>
+        <PARAMETER NAME="AND" VALUE="&quot;000000&quot;"/>
+        <PARAMETER NAME="OR" VALUE="&quot;000001&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ALU_control_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="5" NAME="op" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_op">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="op"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="func" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_func">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="func"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="ALU_func" RIGHT="0" SIGIS="undef" SIGNAME="ALU_control_0_ALU_func">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="func"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/PC_0" HWVERSION="1.0" INSTANCE="PC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PC" VLNV="xilinx.com:user:PC:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_PC_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="pc_load" SIGIS="undef" SIGNAME="External_Ports_pc_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pc_load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="pc_addr" RIGHT="0" SIGIS="undef" SIGNAME="PC_0_pc_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="pc_addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Registers_0" HWVERSION="1.0" INSTANCE="Registers_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Registers" VLNV="xilinx.com:user:Registers:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Registers_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="ReadRegister1" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_rs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="rs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ReadRegister2" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_rt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="rt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="WriteRegister" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="WriteData" RIGHT="0" SIGIS="undef" SIGNAME="ALU_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RegDst" SIGIS="undef" SIGNAME="control_0_RegDst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="control_0" PORT="RegDst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="ReadData1" RIGHT="0" SIGIS="undef" SIGNAME="Registers_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="data1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="ReadData2" RIGHT="0" SIGIS="undef" SIGNAME="Registers_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="data2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/control_0" HWVERSION="1.0" INSTANCE="control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="control" VLNV="xilinx.com:user:control:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_control_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="5" NAME="op" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_op">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="instruction_memory_0" PORT="op"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALUSrc" SIGIS="undef" SIGNAME="control_0_ALUSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="ALUSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegDst" SIGIS="undef" SIGNAME="control_0_RegDst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registers_0" PORT="RegDst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/instruction_memory_0" HWVERSION="1.0" INSTANCE="instruction_memory_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="instruction_memory" VLNV="xilinx.com:user:instruction_memory:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="INS0" VALUE="0x00620820"/>
+        <PARAMETER NAME="INS1" VALUE="0x00853021"/>
+        <PARAMETER NAME="INS2" VALUE="0x00212024"/>
+        <PARAMETER NAME="INS3" VALUE="0x00212825"/>
+        <PARAMETER NAME="INS4" VALUE="0x20290064"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_instruction_memory_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="5" NAME="op" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_op">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="control_0" PORT="op"/>
+            <CONNECTION INSTANCE="ALU_control_0" PORT="op"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rs" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_rs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registers_0" PORT="ReadRegister1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rt" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_rt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registers_0" PORT="ReadRegister2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rd" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Registers_0" PORT="WriteRegister"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="func" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_func">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_control_0" PORT="func"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="sign_extend" RIGHT="0" SIGIS="undef" SIGNAME="instruction_memory_0_sign_extend">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="sign_extend_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="pc_addr" RIGHT="0" SIGIS="undef" SIGNAME="PC_0_pc_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC_0" PORT="pc_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

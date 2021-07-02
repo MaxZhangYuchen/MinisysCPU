@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/sign_extend/sign_extend.srcs/sources_1/new/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/sign_extend/sign_extend.srcs/sim_1/new/sign_extend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/sign_extend/sign_extend.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

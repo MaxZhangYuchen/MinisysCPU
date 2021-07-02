@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Sep  3 10:22:47 2020
+# Process ID: 8732
+# Current directory: D:/seven
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15248 D:\seven\project_1.xpr
+# Log file: D:/seven/vivado.log
+# Journal file: D:/seven\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/seven/project_1.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+file mkdir C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new
+file mkdir C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new
+file mkdir C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new
+file mkdir C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new
+file mkdir C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new
+file mkdir {C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new}
+close [ open {C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new/design_1.v} w ]
+add_files -fileset sim_1 {{C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/sim_1/new/design_1.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+source design_1.tcl
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim

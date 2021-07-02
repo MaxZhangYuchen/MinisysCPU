@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Pikachu/Desktop/Experiment_3/doubling/project_2.srcs/sources_1/new/doubling.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doubling
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Pikachu/Desktop/Experiment_3/doubling/project_2.srcs/sim_1/new/dobling_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dobling_tb

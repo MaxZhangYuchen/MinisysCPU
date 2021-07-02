@@ -1,0 +1,30 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port cin_0 -pg 1 -y 260 -defaultsOSRD
+preplace port cout_0 -pg 1 -y 270 -defaultsOSRD
+preplace portBus addend_0 -pg 1 -y 70 -defaultsOSRD
+preplace portBus total_sum_0 -pg 1 -y 180 -defaultsOSRD
+preplace portBus addend_1 -pg 1 -y 190 -defaultsOSRD
+preplace inst adder_0 -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace inst adder_1 -pg 1 -lvl 3 -y 260 -defaultsOSRD
+preplace inst deconcentrator_0 -pg 1 -lvl 1 -y 70 -defaultsOSRD
+preplace inst deconcentrator_1 -pg 1 -lvl 1 -y 190 -defaultsOSRD
+preplace inst doubling_0 -pg 1 -lvl 4 -y 180 -defaultsOSRD
+preplace netloc adder_1_sum 1 3 1 770
+preplace netloc adder_0_cout 1 2 1 540
+preplace netloc adder_0_sum 1 2 2 NJ 170 N
+preplace netloc addend_0_1 1 0 1 NJ
+preplace netloc deconcentrator_1_one_ten 1 1 1 N
+preplace netloc doubling_0_total_sum 1 4 1 NJ
+preplace netloc deconcentrator_1_hundred_thousand 1 1 2 300J 260 N
+preplace netloc deconcentrator_0_one_ten 1 1 1 300
+preplace netloc deconcentrator_0_hundred_thousand 1 1 2 NJ 80 550
+preplace netloc adder_1_cout 1 3 2 NJ 270 N
+preplace netloc addend_1_1 1 0 1 NJ
+preplace netloc cin_0_1 1 0 2 NJ 260 310J
+levelinfo -pg 1 -10 160 430 660 950 1140 -top 0 -bot 630
+"
+}
+0

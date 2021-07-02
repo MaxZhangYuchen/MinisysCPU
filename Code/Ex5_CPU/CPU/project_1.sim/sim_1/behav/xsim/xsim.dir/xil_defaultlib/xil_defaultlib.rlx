@@ -1,0 +1,20 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_ALU_0_0/sim/design_1_ALU_0_0.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/6521/CPU_1/CPU_1.srcs/sources_1/new/Registers.v,,design_1_ALU_0_0,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_ALU_control_0_0/sim/design_1_ALU_control_0_0.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/f223/CPU_1/CPU_1.srcs/sources_1/new/control.v,,design_1_ALU_control_0_0,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_PC_0_0/sim/design_1_PC_0_0.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/sim/design_1.v,,design_1_PC_0_0,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_Registers_0_0/sim/design_1_Registers_0_0.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.srcs/sources_1/bd/Ex5_CPU/Instruction memory/CPU_1/CPU_1.srcs/sources_1/new/instruction_memory.v,,design_1_Registers_0_0,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_control_0_0/sim/design_1_control_0_0.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/e098/CPU_1/CPU_1.srcs/sources_1/new/ALU.v,,design_1_control_0_0,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_instruction_memory_0_0/sim/design_1_instruction_memory_0_0.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/2094/CPU_1/CPU_1.srcs/sources_1/new/PC.v,,design_1_instruction_memory_0_0,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/2094/CPU_1/CPU_1.srcs/sources_1/new/PC.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_PC_0_0/sim/design_1_PC_0_0.v,,PC,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/41bd/CPU_1/CPU_1.srcs/sources_1/new/ALU_control.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_ALU_control_0_0/sim/design_1_ALU_control_0_0.v,,ALU_control,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/6521/CPU_1/CPU_1.srcs/sources_1/new/Registers.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_Registers_0_0/sim/design_1_Registers_0_0.v,,Registers,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/e098/CPU_1/CPU_1.srcs/sources_1/new/ALU.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_ALU_0_0/sim/design_1_ALU_0_0.v,,ALU,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ipshared/f223/CPU_1/CPU_1.srcs/sources_1/new/control.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_control_0_0/sim/design_1_control_0_0.v,,control,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/sim/design_1.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.srcs/sim_1/new/desgin_1_tb.v,,design_1,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.srcs/sim_1/new/desgin_1_tb.v,1598866522,verilog,,,,desgin_1_tb,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.srcs/sources_1/bd/Ex5_CPU/Instruction memory/CPU_1/CPU_1.srcs/sources_1/new/instruction_memory.v,1598865893,verilog,,D:/Ex5_CPU/CPU/project_1.ip_user_files/bd/design_1/ip/design_1_instruction_memory_0_0/sim/design_1_instruction_memory_0_0.v,,instruction_memory,,,,,,,,
+D:/Ex5_CPU/CPU/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v,1598865893,verilog,,,,design_1_wrapper,,,,,,,,

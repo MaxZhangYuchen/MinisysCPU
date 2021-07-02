@@ -1,0 +1,137 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xB8AF7EE8B8AF7EE8",
+      "device": "xc7a35tftg256-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "adder_0": "",
+      "adder_1": "",
+      "deconcentrator_0": "",
+      "doubling_0": "",
+      "deconcentrator_1": ""
+    },
+    "ports": {
+      "cout_0": {
+        "direction": "O"
+      },
+      "total_sum_0": {
+        "direction": "O",
+        "left": "10",
+        "right": "0"
+      },
+      "cin_0": {
+        "direction": "I"
+      },
+      "addend_0": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "addend_1": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      }
+    },
+    "components": {
+      "adder_0": {
+        "vlnv": "xilinx.com:user:adder:1.0",
+        "xci_name": "design_1_adder_0_0"
+      },
+      "adder_1": {
+        "vlnv": "xilinx.com:user:adder:1.0",
+        "xci_name": "design_1_adder_1_0"
+      },
+      "deconcentrator_0": {
+        "vlnv": "xilinx.com:user:deconcentrator:1.0",
+        "xci_name": "design_1_deconcentrator_0_0"
+      },
+      "doubling_0": {
+        "vlnv": "xilinx.com:user:doubling:1.0",
+        "xci_name": "design_1_doubling_0_0"
+      },
+      "deconcentrator_1": {
+        "vlnv": "xilinx.com:user:deconcentrator:1.0",
+        "xci_name": "design_1_deconcentrator_0_1"
+      }
+    },
+    "nets": {
+      "deconcentrator_0_one_ten": {
+        "ports": [
+          "deconcentrator_0/one_ten",
+          "adder_0/addend_1"
+        ]
+      },
+      "deconcentrator_1_one_ten": {
+        "ports": [
+          "deconcentrator_1/one_ten",
+          "adder_0/addend_2"
+        ]
+      },
+      "adder_0_sum": {
+        "ports": [
+          "adder_0/sum",
+          "doubling_0/sum_one_ten"
+        ]
+      },
+      "doubling_0_total_sum": {
+        "ports": [
+          "doubling_0/total_sum",
+          "total_sum_0"
+        ]
+      },
+      "cin_0_1": {
+        "ports": [
+          "cin_0",
+          "adder_0/cin"
+        ]
+      },
+      "addend_0_1": {
+        "ports": [
+          "addend_0",
+          "deconcentrator_0/addend"
+        ]
+      },
+      "addend_1_1": {
+        "ports": [
+          "addend_1",
+          "deconcentrator_1/addend"
+        ]
+      },
+      "deconcentrator_0_hundred_thousand": {
+        "ports": [
+          "deconcentrator_0/hundred_thousand",
+          "adder_1/addend_1"
+        ]
+      },
+      "adder_0_cout": {
+        "ports": [
+          "adder_0/cout",
+          "adder_1/cin"
+        ]
+      },
+      "deconcentrator_1_hundred_thousand": {
+        "ports": [
+          "deconcentrator_1/hundred_thousand",
+          "adder_1/addend_2"
+        ]
+      },
+      "adder_1_cout": {
+        "ports": [
+          "adder_1/cout",
+          "cout_0"
+        ]
+      },
+      "adder_1_sum": {
+        "ports": [
+          "adder_1/sum",
+          "doubling_0/sum_hundred_thousand"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1598862313">
+  <File Type="BITSTR-BMM" Name="instruction_memory_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="instruction_memory_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="instruction_memory_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="instruction_memory_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="instruction_memory.tcl"/>
+  <File Type="OPT-TIMING" Name="instruction_memory_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="instruction_memory_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="instruction_memory_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="instruction_memory_reports.tcl"/>
+  <File Type="OPT-DRC" Name="instruction_memory_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="instruction_memory.hwdef"/>
+  <File Type="PWROPT-DCP" Name="instruction_memory_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="instruction_memory_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="instruction_memory_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="instruction_memory_placed.dcp"/>
+  <File Type="PLACE-IO" Name="instruction_memory_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="instruction_memory_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="instruction_memory_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="instruction_memory_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="instruction_memory_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="instruction_memory_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="instruction_memory_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="instruction_memory.bgn"/>
+  <File Type="PLACE-TIMING" Name="instruction_memory_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="instruction_memory_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="instruction_memory.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="instruction_memory_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="instruction_memory_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="instruction_memory_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="instruction_memory.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="instruction_memory_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="instruction_memory_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="instruction_memory_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="instruction_memory_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="instruction_memory_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="instruction_memory_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="instruction_memory.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="instruction_memory_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="instruction_memory.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="instruction_memory_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="instruction_memory_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="instruction_memory.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="instruction_memory_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="instruction_memory_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="instruction_memory_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="instruction_memory_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="instruction_memory_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="instruction_memory_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="instruction_memory_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="instruction_memory_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="instruction_memory_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="instruction_memory_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="instruction_memory_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="instruction_memory_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="instruction_memory_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="instruction_memory_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="instruction_memory_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="instruction_memory_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="instruction_memory_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="instruction_memory_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="instruction_memory_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="instruction_memory.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="instruction_memory_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="instruction_memory.rbt"/>
+  <File Type="BITSTR-NKY" Name="instruction_memory.nky"/>
+  <File Type="BG-DRC" Name="instruction_memory.drc"/>
+  <File Type="RDI-RDI" Name="instruction_memory.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/instruction_memory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="instruction_memory"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

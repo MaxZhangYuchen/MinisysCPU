@@ -1,0 +1,158 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul  2 14:04:55 2020
+# Process ID: 2880
+# Current directory: C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8824 C:\Users\Pikachu\Desktop\Hardware course design\Experiment_1\Experiment_1.xpr
+# Log file: C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/vivado.log
+# Journal file: C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado18.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 784.867 ; gain = 172.129
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Jul  2 14:12:02 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Incode[3]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Incode[2]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Incode[1]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Incode[0]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[6]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[5]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[4]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[3]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[2]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[1]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[0]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Incode[0]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Incode[1]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Incode[2]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Incode[3]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[0]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[1]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[2]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[3]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[4]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[5]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Outcode[6]'. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.srcs/constrs_1/new/decode4_8_xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1085.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1225.066 ; gain = 359.199
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Incode1[3]} {Incode1[2]} {Incode1[1]} {Incode1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Incode2[3]} {Incode2[2]} {Incode2[1]} {Incode2[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Incode3[3]} {Incode3[2]} {Incode3[1]} {Incode3[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Outcode1[6]} {Outcode1[5]} {Outcode1[4]} {Outcode1[3]} {Outcode1[2]} {Outcode1[1]} {Outcode1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Outcode2[6]} {Outcode2[5]} {Outcode2[4]} {Outcode2[3]} {Outcode2[2]} {Outcode2[1]} {Outcode2[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Outcode3[6]} {Outcode3[5]} {Outcode3[4]} {Outcode3[3]} {Outcode3[2]} {Outcode3[1]} {Outcode3[0]}]]
+place_ports {Incode1[0]} B9
+place_ports {Incode1[1]} D11
+place_ports {Incode1[2]} B11
+place_ports {Incode1[3]} B12
+place_ports {Incode2[0]} A10
+place_ports {Incode2[1]} B10
+place_ports {Incode2[2]} J13
+place_ports {Incode2[3]} K15
+place_ports {Incode3[0]} K16
+place_ports {Incode3[1]} P6
+place_ports {Incode3[2]} D10
+place_ports {Incode3[3]} C8
+place_ports {Outcode1[0]} L14
+place_ports {Outcode1[1]} M14
+place_ports {Outcode1[2]} L15
+place_ports {Outcode1[3]} M15
+place_ports {Outcode1[4]} K13
+place_ports {Outcode1[5]} L13
+place_ports {Outcode1[6]} L12
+place_ports {Outcode2[0]} T9
+place_ports {Outcode2[1]} C6
+place_ports {Outcode2[2]} D6
+place_ports {Outcode2[3]} D5
+place_ports {Outcode2[4]} A2
+place_ports {Outcode2[5]} D3
+place_ports {Outcode2[6]} C4
+place_ports {Outcode3[0]} D16
+place_ports {Outcode3[1]} C7
+place_ports {Outcode3[2]} D8
+place_ports {Outcode3[3]} A12
+place_ports {Outcode3[4]} D9
+place_ports {Outcode3[5]} E12
+place_ports {Outcode3[6]} E13
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1679.180 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1732.746 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1732.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1735.324 ; gain = 0.000
+[Thu Jul  2 14:24:48 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Pikachu/Desktop/Hardware course design/Experiment_1/Experiment_1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  2 14:45:03 2020...

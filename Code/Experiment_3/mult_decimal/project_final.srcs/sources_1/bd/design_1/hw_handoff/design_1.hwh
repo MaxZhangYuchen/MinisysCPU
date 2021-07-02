@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Aug 17 21:58:34 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="design_1" PACKAGE="ftg256" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="cout_0" SIGIS="undef" SIGNAME="adder_1_cout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="adder_1" PORT="cout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="10" NAME="total_sum_0" RIGHT="0" SIGIS="undef" SIGNAME="doubling_0_total_sum">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="doubling_0" PORT="total_sum"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="cin_0" SIGIS="undef" SIGNAME="External_Ports_cin_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="adder_0" PORT="cin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="addend_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addend_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="deconcentrator_0" PORT="addend"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="addend_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addend_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="deconcentrator_1" PORT="addend"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/adder_0" HWVERSION="1.0" INSTANCE="adder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="adder" VLNV="xilinx.com:user:adder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_adder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="8" NAME="addend_1" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_0_one_ten">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="deconcentrator_0" PORT="one_ten"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="addend_2" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_1_one_ten">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="deconcentrator_1" PORT="one_ten"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="sum" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="doubling_0" PORT="sum_one_ten"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="External_Ports_cin_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cin_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="adder_0_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_1" PORT="cin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/adder_1" HWVERSION="1.0" INSTANCE="adder_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="adder" VLNV="xilinx.com:user:adder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_adder_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="8" NAME="addend_1" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_0_hundred_thousand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="deconcentrator_0" PORT="hundred_thousand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="addend_2" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_1_hundred_thousand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="deconcentrator_1" PORT="hundred_thousand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="sum" RIGHT="0" SIGIS="undef" SIGNAME="adder_1_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="doubling_0" PORT="sum_hundred_thousand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="adder_0_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_0" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="adder_1_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cout_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/deconcentrator_0" HWVERSION="1.0" INSTANCE="deconcentrator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="deconcentrator" VLNV="xilinx.com:user:deconcentrator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_deconcentrator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="8" NAME="addend" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addend_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addend_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="one_ten" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_0_one_ten">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_0" PORT="addend_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="hundred_thousand" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_0_hundred_thousand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_1" PORT="addend_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/deconcentrator_1" HWVERSION="1.0" INSTANCE="deconcentrator_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="deconcentrator" VLNV="xilinx.com:user:deconcentrator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_deconcentrator_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="8" NAME="addend" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addend_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addend_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="one_ten" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_1_one_ten">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_0" PORT="addend_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="hundred_thousand" RIGHT="0" SIGIS="undef" SIGNAME="deconcentrator_1_hundred_thousand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_1" PORT="addend_2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/doubling_0" HWVERSION="1.0" INSTANCE="doubling_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="doubling" VLNV="xilinx.com:user:doubling:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_doubling_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="8" NAME="sum_one_ten" RIGHT="0" SIGIS="undef" SIGNAME="adder_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_0" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="sum_hundred_thousand" RIGHT="0" SIGIS="undef" SIGNAME="adder_1_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_1" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="10" NAME="total_sum" RIGHT="0" SIGIS="undef" SIGNAME="doubling_0_total_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="total_sum_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

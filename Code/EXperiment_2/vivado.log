@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 17 08:48:53 2020
+# Process ID: 10340
+# Current directory: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8848 C:\Users\Pikachu\Desktop\Hardware course design\EXperiment_2\EXperiment_2.xpr
+# Log file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/vivado.log
+# Journal file: C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Pikachu/Desktop/Hardware course design/EXperiment_2/EXperiment_2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado18.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 800.090 ; gain = 173.965
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 17 08:49:30 2020...

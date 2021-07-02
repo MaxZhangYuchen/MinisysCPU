@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Pikachu/Desktop/Experiment_4/project_1.srcs/sources_1/new/design1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module desgin1
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'seven_LED' is not allowed [C:/Users/Pikachu/Desktop/Experiment_4/project_1.srcs/sources_1/new/design1.v:35]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'LED' is not allowed [C:/Users/Pikachu/Desktop/Experiment_4/project_1.srcs/sources_1/new/design1.v:36]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Pikachu/Desktop/Experiment_4/project_1.srcs/sources_1/new/design1.v:42]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Pikachu/Desktop/Experiment_4/project_1.srcs/sim_1/new/design_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_tb

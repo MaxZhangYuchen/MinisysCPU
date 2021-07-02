@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Sep  6 11:23:49 2020
+# Process ID: 15388
+# Current directory: F:/硬件课程设计/实验/Experiment_3/mult_decimal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13580 F:\硬件课程设计\实验\Experiment_3\mult_decimal\project_final.xpr
+# Log file: F:/硬件课程设计/实验/Experiment_3/mult_decimal/vivado.log
+# Journal file: F:/硬件课程设计/实验/Experiment_3/mult_decimal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/硬件课程设计/实验/Experiment_3/mult_decimal/project_final.xpr
+update_compile_order -fileset sources_1

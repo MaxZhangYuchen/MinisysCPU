@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Ex5_CPU/Registers/CPU_1/CPU_1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ReadData1' is not allowed [D:/Ex5_CPU/Registers/CPU_1/CPU_1.srcs/sources_1/new/Registers.v:34]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ReadData2' is not allowed [D:/Ex5_CPU/Registers/CPU_1/CPU_1.srcs/sources_1/new/Registers.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Ex5_CPU/Registers/CPU_1/CPU_1.srcs/sim_1/new/Registers_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers_tb

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Sep  3 08:45:07 2020
+# Process ID: 492
+# Current directory: D:/Ex5_CPU/CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2128 D:\Ex5_CPU\CPU\project_1.xpr
+# Log file: D:/Ex5_CPU/CPU/vivado.log
+# Journal file: D:/Ex5_CPU/CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Ex5_CPU/CPU/project_1.xpr
+open_bd_design {D:/Ex5_CPU/CPU/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets instruction_memory_0_sign_extend]
+connect_bd_net [get_bd_pins instruction_memory_0/sign_extend] [get_bd_pins ALU_0/sign_extend_data]
+connect_bd_net [get_bd_pins instruction_memory_0/func] [get_bd_pins ALU_control_0/func]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+source desgin_1_tb.tcl
+close_sim
+open_bd_design {D:/Ex5_CPU/CPU/project_1.srcs/sources_1/bd/design_1/design_1.bd}
